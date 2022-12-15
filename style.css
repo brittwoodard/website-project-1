@@ -1,3 +1,10 @@
+/* Colors */
+
+/* Typography
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'GFS Didot', serif;
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -13,3 +20,12 @@ header {border: 1px solid grey;}
 section {border: 1px solid grey;}
 div {border: 1px solid grey;}
 footer {border: 1px solid grey;}
+
+/* Universal Styles */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Reusable Utility Classes */
+
+/* Images */
