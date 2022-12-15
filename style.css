@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    padding: 0;
+}
+
+Temporary Styles
+header {border: 1px solid grey;}
+section {border: 1px solid grey;}
+div {border: 1px solid grey;}
+footer {border: 1px solid grey;}
