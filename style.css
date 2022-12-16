@@ -74,6 +74,27 @@ header h5 {
     color: #707071;
 }
 
+form input,
+form textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 2px solid #7e6955;
+    outline: none;
+    font-family: inherit;
+    color: #707071;
+    font-size: 0.9rem;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #333e27;
+}
+
+textarea {
+    min-height: 6rem;
+}
+
 /* Reusable Utility Classes */
 
 .padded-5 {padding: 5%;}
@@ -83,6 +104,9 @@ header h5 {
 .center {text-align: center;}
 .right {text-align: right;}
 
+.feature {color: #c8cbc4;}
+.white {color: white;}
+
 .lowercase {text-transform: lowercase;}
 .uppercase {text-transform: uppercase;}
 
@@ -90,7 +114,11 @@ header h5 {
 .tall-90 {min-height: 90vh;}
 .tall-50 {min-height: 50vh;}
 
-.bg-light {background-color: #f1f0ee;}
+.bg-light {background-color: #f1f0ee;} 
+.bg-dark {
+    background-color: #7e6955;
+    color: white;
+}
 
 /* Utility Classes */
 .button {
