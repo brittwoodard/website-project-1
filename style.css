@@ -88,6 +88,7 @@ header h5 {
 
 .tall-100 {min-height: 100vh;}
 .tall-90 {min-height: 90vh;}
+.tall-50 {min-height: 50vh;}
 
 .bg-light {background-color: #f1f0ee;}
 
@@ -136,6 +137,11 @@ header h5 {
 .bg-bowl {
     background-image: url('/images/website-project-22.jpg');
     background-position: 50% 50%;
+}
+
+.bg-hands {
+    background-image: url('/images/website-project-7.jpg');
+    background-position: 50% 55%;
 }
 
 .img-card {
