@@ -187,10 +187,9 @@ form .button {
 }
 
 .featured-gallery {
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     overflow-x: auto;
     flex-wrap: nowrap;
-    white-space: nowrap;
 }
 
 .button:hover {
@@ -282,8 +281,8 @@ form .button {
     background-color: #c8cbc4;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 25vw;
-    height: 60vh;
+    width: 16vw;
+    height: 50vh;
     vertical-align: middle;
     display: inline-block;
     margin-bottom: 1rem;
