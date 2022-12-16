@@ -3,7 +3,8 @@ Camel: #86563c
 Mint: #c8cbc4
 Green: #333e27
 Brown: #7e6955
-Cream: #f2f0ee
+Cream: #f1f0ee
+Grey: #707071
 */
 
 /* Typography
@@ -30,8 +31,119 @@ footer {border: 1px solid grey;}
 /* Universal Styles */
 body {
     font-family: 'Nunito Sans', sans-serif;
+    color: #707071;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'GFS Didot', serif;
+    color: #86563c;
+}
+
+h4 {
+    color: #333e27;
+    margin-bottom: 0.5rem;
+}
+
+p {margin-bottom: 1rem;}
+p:last-child {margin-bottom: 0;}
+
+h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    padding: 1rem 5%;
+    text-transform: lowercase;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 0.5rem;
+    margin: 0 0.5rem;
+}
+
+nav a:hover {color: #c8cbc4;}
+
+header h2 {font-size: 4rem;}
+header h5 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    color: #707071;
 }
 
 /* Reusable Utility Classes */
 
+.padded-5 {padding: 5%;}
+.padded-10 {padding: 10%;}
+.padded-5-r {padding-right: 5%;}
+
+.center {text-align: center;}
+.right {text-align: right;}
+
+.lowercase {text-transform: lowercase;}
+.uppercase {text-transform: uppercase;}
+
+.tall-100 {min-height: 100vh;}
+.tall-90 {min-height: 90vh;}
+
+.bg-light {background-color: #f1f0ee;}
+
+/* Utility Classes */
+.button {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-family: 'didot', serif;
+    color: white;
+    background-color: #333e27;
+    border: 1px solid #333e27;
+    padding: 0.5rem 1.5rem;
+    letter-spacing: 0.2em;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #c8cbc4;
+    color: #333e27;
+    border: 1px solid #333e27;
+    transition: 0.5s;
+}
+
 /* Images */
+.bg-image {
+    background-color: #c8cbc4;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-backbend {
+    background-image: url('/images/website-project-3.jpg');
+    background-position: 50% 63%;
+}
+
+.bg-plant {
+    background-image: url('/images/website-project-21.jpg');
+    background-position: 50% 4%;
+}
+
+.bg-headshot {
+    background-image: url('/images/website-project-1.jpg');
+    background-position: 50% 50%;
+}
+
+.bg-bowl {
+    background-image: url('/images/website-project-22.jpg');
+    background-position: 50% 50%;
+}
+
+.img-card {
+    background-color: #c8cbc4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50% 50% 0 0;
+    height: 30vh;
+    width: 25vh;
+    margin-bottom: 1rem;
+}
