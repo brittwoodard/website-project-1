@@ -22,11 +22,11 @@ font-family: 'GFS Didot', serif;
     padding: 0;
 }
 
-Temporary Styles
+/* Temporary Styles
 header {border: 1px solid grey;}
 section {border: 1px solid grey;}
 div {border: 1px solid grey;}
-footer {border: 1px solid grey;}
+footer {border: 1px solid grey;} */
 
 /* Universal Styles */
 body {
@@ -46,6 +46,15 @@ h4 {
 
 p {margin-bottom: 1rem;}
 p:last-child {margin-bottom: 0;}
+
+a {
+    color: #333e27;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c8cbc4;
+}
 
 h3 {
     font-size: 2.5rem;
@@ -74,6 +83,23 @@ header h5 {
     color: #707071;
 }
 
+footer {
+    background-color: #c8cbc4;
+}
+
+footer h3 {
+    font-size: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #707071;
+}
+
+footer a:hover {
+    color: #333e27;
+}
+
 form input,
 form textarea {
     width: 100%;
@@ -100,7 +126,7 @@ textarea {
 .padded-5 {padding: 5%;}
 .padded-10 {padding: 10%;}
 .padded-5-r {padding-right: 5%;}
-.padded-5-t {padding-top: 5%;}
+.padded-5-t-b {padding: 5% 0;}
 
 .center {text-align: center;}
 .right {text-align: right;}
@@ -108,8 +134,12 @@ textarea {
 .feature {color: #c8cbc4;}
 .white {color: white;}
 
+.block {display: block;}
+
 .lowercase {text-transform: lowercase;}
 .uppercase {text-transform: uppercase;}
+
+.text-1.5 {font-size: 1.5rem;}
 
 .tall-100 {min-height: 100vh;}
 .tall-90 {min-height: 90vh;}
@@ -137,13 +167,14 @@ textarea {
 .featured-gallery {
     padding: 1rem 0;
     overflow-x: nowrap;
-    white-space: nowrap;;
+    white-space: nowrap;
 }
 
 .featured-image {
     max-width: 10rem;
     vertical-align: middle;
     display: inline-block;
+    box-shadow: rgba(200, 203, 196, 0.2) 0px 8px 24px;
 }
 
 .button:hover {
@@ -151,6 +182,12 @@ textarea {
     color: #333e27;
     border: 1px solid #333e27;
     transition: 0.5s;
+}
+
+.fas {
+    padding: 0px 0.5rem;
+    margin: 0 0.5rem;
+    font-size: 2rem;
 }
 
 /* Images */
@@ -182,6 +219,11 @@ textarea {
 
 .bg-hands {
     background-image: url('/images/website-project-7.jpg');
+    background-position: 50% 55%;
+}
+
+.bg-recipe-1 {
+    background-image: url('/images/website-project-15.jpg');
     background-position: 50% 55%;
 }
 
