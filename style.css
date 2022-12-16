@@ -100,6 +100,7 @@ textarea {
 .padded-5 {padding: 5%;}
 .padded-10 {padding: 10%;}
 .padded-5-r {padding-right: 5%;}
+.padded-5-t {padding-top: 5%;}
 
 .center {text-align: center;}
 .right {text-align: right;}
@@ -130,6 +131,18 @@ textarea {
     border: 1px solid #333e27;
     padding: 0.5rem 1.5rem;
     letter-spacing: 0.2em;
+    display: inline-block;
+}
+
+.featured-gallery {
+    padding: 1rem 0;
+    overflow-x: nowrap;
+    white-space: nowrap;;
+}
+
+.featured-image {
+    max-width: 10rem;
+    vertical-align: middle;
     display: inline-block;
 }
 
