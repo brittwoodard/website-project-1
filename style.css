@@ -139,7 +139,7 @@ textarea {
 .lowercase {text-transform: lowercase;}
 .uppercase {text-transform: uppercase;}
 
-.text-1.5 {font-size: 1.5rem;}
+.text-1-5 {font-size: 1.5rem;}
 
 .tall-100 {min-height: 100vh;}
 .tall-90 {min-height: 90vh;}
@@ -166,15 +166,8 @@ textarea {
 
 .featured-gallery {
     padding: 1rem 0;
-    overflow-x: nowrap;
-    white-space: nowrap;
-}
-
-.featured-image {
-    max-width: 10rem;
-    vertical-align: middle;
-    display: inline-block;
-    box-shadow: rgba(200, 203, 196, 0.2) 0px 8px 24px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
 }
 
 .button:hover {
@@ -227,6 +220,26 @@ textarea {
     background-position: 50% 55%;
 }
 
+.bg-recipe-2 {
+    background-image: url('/images/website-project-14.jpg');
+    background-position: 50% 55%;
+}
+
+.bg-recipe-3 {
+    background-image: url('/images/website-project-16.jpg');
+    background-position: 50% 55%;
+}
+
+.bg-recipe-4 {
+    background-image: url('/images/website-project-20.jpg');
+    background-position: 50% 55%;
+}
+
+.bg-recipe-5 {
+    background-image: url('/images/website-project-19.jpg');
+    background-position: 50% 55%;
+}
+
 .img-card {
     background-color: #c8cbc4;
     background-size: cover;
@@ -235,4 +248,20 @@ textarea {
     height: 30vh;
     width: 25vh;
     margin-bottom: 1rem;
+}
+
+.featured-image {
+    background-color: #c8cbc4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25vw;
+    height: 60vh;
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 1rem;
+    border-right: 2rem solid white;
+}
+
+.featured-image:hover {
+    box-shadow: rgba(200, 203, 196, 0.2) 0px 8px 24px;
 }
