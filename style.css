@@ -187,7 +187,7 @@ form .button {
 }
 
 .featured-gallery {
-    /* padding: 1rem 0; */
+    padding: 1rem 0;
     overflow-x: auto;
     flex-wrap: nowrap;
 }
@@ -286,6 +286,7 @@ form .button {
     vertical-align: middle;
     display: inline-block;
     margin-bottom: 1rem;
+    margin-right: 3rem;
 }
 
 .featured-image:hover {
