@@ -29,6 +29,10 @@ div {border: 1px solid grey;}
 footer {border: 1px solid grey;} */
 
 /* Universal Styles */
+html {
+    scroll-behavior: smooth;
+  }
+  
 body {
     font-family: 'Nunito Sans', sans-serif;
     color: #707071;
