@@ -71,24 +71,24 @@
      </section>
 
      <!-- Services Section -->
-     <section data-aos="fade-up" class="grid padded-5 bg-light" id="services">
-        <h3 class="col-12 center">Offerings</h3>
+     <section class="grid padded-5 bg-light" id="services">
+        <h3 data-aos="fade-up" class="col-12 center">Offerings</h3>
         <!-- Wellness Coaching -->
-        <div class="col-4 center padded-5">
+        <div data-aos="fade-up" class="col-4 center padded-5">
             <img src="/images/website-project-12.jpg" class="img-card">
             <h4>Wellness Coaching</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sed officiis sapiente voluptatum provident tenetur, dolores quasi accusantium cum magnam minima, eius rem maiores autem earum eveniet reiciendis quisquam molestiae.</p>
             <a href="#" class="button">Explore</a>
         </div>
         <!--Online Classes -->
-        <div class="col-4 center padded-5">
+        <div data-aos="fade-up" class="col-4 center padded-5">
             <img src="/images/website-project-4.jpg" class="img-card">
             <h4>Online Classes</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sed officiis sapiente voluptatum provident tenetur, dolores quasi accusantium cum magnam minima, eius rem maiores autem earum eveniet reiciendis quisquam molestiae.</p>
             <a href="#" class="button">Explore</a>
         </div>
         <!--Ayurvedic Retreat -->
-        <div class="col-4 center padded-5">
+        <div data-aos="fade-up" class="col-4 center padded-5">
             <img src="/images/website-project-11.jpg" class="img-card">
             <h4>Ayurvedic Retreat</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sed officiis sapiente voluptatum provident tenetur, dolores quasi accusantium cum magnam minima, eius rem maiores autem earum eveniet reiciendis quisquam molestiae.</p>
@@ -185,7 +185,15 @@
         <!-- Initialize AOS Animation -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-            AOS.init();
+            AOS.init({
+            offset: 220, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+            });
         </script>
 
      </body>
