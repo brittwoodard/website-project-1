@@ -280,6 +280,11 @@ form .button {
     background-position: 50% 55%;
 }
 
+.bg-shadow {
+    background-image: url(/images/website-project-28.jpg);
+    background-position: 50% 50%;
+}
+
 .img-card {
     background-color: #c8cbc4;
     background-size: cover;
