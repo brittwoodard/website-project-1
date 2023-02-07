@@ -51,6 +51,9 @@ h4 {
 p {margin-bottom: 1rem;}
 p:last-child {margin-bottom: 0;}
 
+li {margin-left: 1rem;}
+li:last-child {margin-bottom: 1rem;}
+
 a {
     color: #333e27;
     text-decoration: none;
@@ -149,6 +152,8 @@ form .button {
 .padded-5-t-b {padding: 5% 0;}
 
 .margin-5-r {margin-right: 5rem;}
+.margin-10-r {margin-right: 10%;}
+.margin-10-l {margin-left: 10%;}
 
 .center {text-align: center;}
 .right {text-align: right;}
@@ -211,6 +216,18 @@ form .button {
 .fas:last-child {
     padding-right: 0;
     margin-right: 0;
+}
+
+.featured-box {
+    border: 1px solid #707071;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.bump-right {
+    margin-right: calc(-5vw);
+    z-index: 2;
+    position: relative;
 }
 
 /* Images */
@@ -282,6 +299,21 @@ form .button {
 
 .bg-shadow {
     background-image: url(/images/website-project-28.jpg);
+    background-position: 50% 50%;
+}
+
+.bg-yoga-1 {
+    background-image: url(/images/website-project-25.jpg);
+    background-position: 50% 50%;
+}
+
+.bg-yoga-2 {
+    background-image: url(/images/website-project-26.jpg);
+    background-position: 50% 50%;
+}
+
+.bg-yoga-3 {
+    background-image: url(/images/website-project-27.jpg);
     background-position: 50% 50%;
 }
 
