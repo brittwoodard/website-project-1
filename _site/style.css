@@ -152,6 +152,7 @@ form .button {
 .padded-5-t-b {padding: 5% 0;}
 
 .margin-5-r {margin-right: 5rem;}
+.margin-5-b {margin-bottom: 5%;}
 .margin-10-r {margin-right: 10%;}
 .margin-10-l {margin-left: 10%;}
 
@@ -226,6 +227,12 @@ form .button {
 
 .bump-right {
     margin-right: calc(-5vw);
+    z-index: 2;
+    position: relative;
+}
+
+.bump-left {
+    margin-left: calc(-5vw);
     z-index: 2;
     position: relative;
 }
