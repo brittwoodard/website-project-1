@@ -1,5 +1,31 @@
 ---
 layout: default
+title: Home
+services:
+ - image: /images/website-project-12.jpg
+   service: Wellness Coaching
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sed officiis sapiente voluptatum provident tenetur, dolores quasi accusantium cum magnam minima, eius rem maiores autem earum eveniet reiciendis quisquam molestiae.
+ - image: /images/website-project-4.jpg
+   service: Online Classes
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sed officiis sapiente voluptatum provident tenetur, dolores quasi accusantium cum magnam minima, eius rem maiores autem earum eveniet reiciendis quisquam molestiae.
+ - image: /images/website-project-11.jpg
+   service: Ayurvedic Retreat
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sed officiis sapiente voluptatum provident tenetur, dolores quasi accusantium cum magnam minima, eius rem maiores autem earum eveniet reiciendis quisquam molestiae.
+recipes:
+ - featured_image: /images/website-project-15.jpg
+   name: Salad
+ - featured_image: /images/website-project-14.jpg
+   name: Yogi Soup
+ - featured_image: /images/website-project-16.jpg
+   name: Ayurvedic Oats
+ - featured_image: /images/website-project-20.jpg
+   name: Kapha Salad
+ - featured_image: /images/website-project-19.jpg
+   name: Spring Soup
+ - featured_image: /images/website-project-23.jpg
+   name: Ojas Tonic
+ - featured_image: /images/website-project-24.jpg
+   name: Overnight Oats
 ---
 
     <!-- Page Content -->
@@ -44,30 +70,16 @@ layout: default
      <!-- Services Section -->
      <section class="grid padded-5 bg-light">
         <h3 data-aos="fade-up" class="col-12 center">Offerings</h3>
-        <!-- Wellness Coaching -->
+        <!-- Services Cards -->
+        {% for item in page.services %}
         <div data-aos="fade-up" data-aos-delay="500" class="col-4_xs-12 center padded-5">
-            <img src="/images/website-project-12.jpg" class="img-card">
-            <h4>Wellness Coaching</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sed officiis sapiente voluptatum provident tenetur, dolores quasi accusantium cum magnam minima, eius rem maiores autem earum eveniet reiciendis quisquam molestiae.</p>
+            <img src="{{item.image}}" class="img-card">
+            <h4>{{item.service}}</h4>
+            <p>{{item.description}}</p>
             <a href="#" class="button">Explore</a>
         </div>
-        <!--Online Classes -->
-        <div data-aos="fade-up" data-aos-delay="1000" class="col-4_xs-12 center padded-5">
-            <img src="/images/website-project-4.jpg" class="img-card">
-            <h4>Online Classes</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sed officiis sapiente voluptatum provident tenetur, dolores quasi accusantium cum magnam minima, eius rem maiores autem earum eveniet reiciendis quisquam molestiae.</p>
-            <a href="#" class="button">Explore</a>
-        </div>
-        <!--Ayurvedic Retreat -->
-        <div data-aos="fade-up" data-aos-delay="1500" class="col-4_xs-12 center padded-5">
-            <img src="/images/website-project-11.jpg" class="img-card">
-            <h4>Ayurvedic Retreat</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sed officiis sapiente voluptatum provident tenetur, dolores quasi accusantium cum magnam minima, eius rem maiores autem earum eveniet reiciendis quisquam molestiae.</p>
-            <a href="#" class="button">Explore</a>
-        </div>
-     </section>
-
-      </section> 
+        {% endfor %}
+     </section> 
 
      <!-- Facebook Section -->
      <section class="grid">
@@ -97,41 +109,13 @@ layout: default
      <section data-aos="fade" class="padded-5-t-b" id="recipes">
         <h3 class="center lowercase">Modern Ayurvedic Recipes</h3>
         <div class="featured-gallery grid"> 
-            <!-- Recipe 1 -->
+            <!-- Recipe -->
+            {% for item in page.recipes %}
             <div class="col-2 margin-5-r">
-                <div class="featured-image bg-recipe-1"></div>
-                <a href="#" class="block heading-text">Salad</a>
+                <div class="featured-image" style="background-image: url('{{item.featured_image}}')"></div>
+                <a href="#" class="block heading-text">{{item.name}}</a>
             </div>
-            <!-- Recipe 2 -->
-            <div class="col-2 margin-5-r">
-                <div class="featured-image bg-recipe-2"></div>
-                <a href="#" class="block heading-text">Yogi Soup</a>
-            </div>
-            <!-- Recipe 3 -->
-            <div class="col-2 margin-5-r">
-                <div class="featured-image bg-recipe-3"></div>
-                <a href="#" class="block heading-text">Ayurvedic Oats</a>
-            </div>
-            <!-- Recipe 4 -->
-            <div class="col-2 margin-5-r">
-                <div class="featured-image bg-recipe-4"></div>
-                <a href="#" class="block heading-text">Kapha Salad</a>
-            </div>
-            <!-- Recipe 5 -->
-            <div class="col-2 margin-5-r">
-                <div class="featured-image bg-recipe-5"></div>
-                <a href="#" class="block heading-text">Spring Soup</a>
-            </div>
-            <!-- Recipe 6 -->
-            <div class="col-2 margin-5-r">
-                <div class="featured-image bg-recipe-6"></div>
-                <a href="#" class="block heading-text">Ojas Tonic</a>
-            </div>
-            <!-- Recipe 7 -->
-            <div class="col-2">
-                <div class="featured-image bg-recipe-7"></div>
-                <a href="#" class="block heading-text">Overnight Oats</a>
-            </div>
+            {% endfor %}
         </div>
         <div class="center">&#10229; &#160; &#160; &#160; &#10230;</div>
     </section>
