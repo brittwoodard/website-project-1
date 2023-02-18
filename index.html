@@ -33,13 +33,13 @@ recipes:
      <header class=>
 
         {% include header-nav.html%}
-        
-        <div class="grid tall-90 bg-image bg-backbend">
+
+        <div class="grid-spaceBetween tall-90 sm-tall-80 bg-image bg-backbend">
             <div class="col-6"></div>
             <div data-aos="fade" data-aos-duration="3000" class="col-6-middle">
-                <h2 class="col-6">Ayurvedic
+                <h2 class="col-6 xs-text-3">Ayurvedic
                 <br>Wellness Coaching</h2>
-                <h5 class="lowercase">Modern application of ancient wisdom</h5>
+                <h5 class="lowercase xs-text-1">Modern application of ancient wisdom</h5>
             </div>
         </div>
      </header>
@@ -50,14 +50,14 @@ recipes:
      </section>
 
      <!-- About Section -->
-     <section class="grid" id="about">
-        <img data-aos="fade-up" src="/images/website-project-1.jpg" class="col-4 padded-5">
-        <div data-aos="fade-up" class="col-5-middle padded-5-r">
+     <section class="grid-spaceBetween sm-padded-5" id="about">
+        <img data-aos="fade-up" src="/images/website-project-1.jpg" class="col-4 padded-5 sm-padded-0">
+        <div data-aos="fade-up" class="col-5_sm-8-middle padded-5-r sm-padded-5-l">
             <h3 class="lowercase">About me</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi facilis nulla accusantium minima eius id inventore amet, possimus, veritatis, quisquam laboriosam totam molestias. Quibusdam quaerat voluptatem, rem libero sunt dicta.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque cumque velit ad itaque omnis voluptatum nam mollitia sint, cupiditate exercitationem culpa corporis numquam eius beatae fuga eaque. Ratione, atque animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consequatur tempora, suscipit libero saepe delectus molestiae ipsa sequi a voluptatem deserunt sint earum dicta rerum id soluta, laudantium, quod quisquam!</p>
         </div>
-        <div class="col-3 bg-image bg-bowl"></div>
+        <div class="col-3 bg-image bg-bowl hide-sm"></div>
      </section>
 
      <!-- Services Section -->
@@ -87,7 +87,7 @@ recipes:
      <!-- Lead Magnet Section -->
      <section class="padded-5 bg-dark center" id="ebook">
         <div data-aos="fade" data-aos-offset="150">
-            <h3 class="lowercase white">Get my free Ayurvedic mealplan</h3>
+            <h3 class="lowercase white xs-text-2">Get my free Ayurvedic mealplan</h3>
             <p class="feature">Eating for your dosha can be hard.  Make life easy and download my 1-week mealplan that includes a grocery list and recipes.</p>
             <form>
                 <input type="text" name="_name" placeholder="First Name">
@@ -104,8 +104,8 @@ recipes:
         <div class="featured-gallery grid"> 
             <!-- Recipe -->
             {% for item in page.recipes %}
-            <div class="col-2 margin-5-r">
-                <div class="featured-image" style="background-image: url('{{item.featured_image}}')"></div>
+            <div class="col-2 margin-5-r sm-margin-1-r">
+                <div class="featured-image sm-tall-30 xs-tall-18" style="background-image: url('{{item.featured_image}}')"></div>
                 <a href="#" class="block heading-text">{{item.name}}</a>
             </div>
             {% endfor %}

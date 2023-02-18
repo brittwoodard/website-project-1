@@ -443,3 +443,51 @@ form .button {
   font-size: 0.8rem;
   opacity: 0.5
 }
+
+/* Media Query */
+/* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none;
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 64em) {
+  .show-md { display: block; }
+  .hide-md { display: none;  }
+}
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+@media (max-width: 48em) {
+  .show-sm {display: block;}
+  .hide-sm {display: none;}
+
+  .sm-tall-30 {height: 30vh;}
+  .sm-tall-80 {min-height: 80vh;}
+
+  .sm-padded-0 {padding: 0;}
+  .sm-padded-5 {padding: 5%;}
+  .sm-padded-5-l {padding-left: 5%;}
+
+  .sm-margin-1-r {margin-right: 1rem;}
+}
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 36em) {
+  .show-xs {display: block;}
+  .hide-xs {display: none;}
+
+  .xs-text-1 {font-size: 1rem;}
+  .xs-text-2 {font-size: 2rem;}
+  .xs-text-3 {font-size: 3rem;}
+
+  .xs-tall-18 {height: 18vh;}
+}
