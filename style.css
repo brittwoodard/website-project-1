@@ -13,7 +13,7 @@ font-family: 'GFS Didot', serif;
 */
 
 :root {
-  --sans: 'Nunito Sans', sans-serif;
+  --paragraph: 'Nunito Sans', sans-serif;
   --heading: font-family: 'Didot', Georgia, serif;
 }
 
@@ -27,19 +27,13 @@ font-family: 'GFS Didot', serif;
     padding: 0;
 }
 
-/* Temporary Styles
-header {border: 1px solid grey;}
-section {border: 1px solid grey;}
-div {border: 1px solid grey;}
-footer {border: 1px solid grey;} */
-
 /* Universal Styles */
 html {
     scroll-behavior: smooth;
   }
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--paragraph);
     color: #707071;
 }
 
